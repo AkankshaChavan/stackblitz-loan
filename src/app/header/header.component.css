@@ -1,0 +1,99 @@
+.main-menu {
+    font-size: 16px;
+  }
+  
+  ::ng-deep .main-menu .p-menuitem-text {
+    color: white !important;
+  }
+  
+  ::ng-deep .main-menu .p-menuitem-link {
+    background-color: #003366 !important;
+  }
+  
+  ::ng-deep .main-menu .p-menuitem-link:hover {
+    color: orange !important;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightblue;
+    padding: 0.5rem 1rem;
+  }
+  
+  .menu-links {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu-links li {
+    position: relative;
+  }
+  
+  .menu-links a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .menu-links a:hover {
+    color: #ff9800;
+  }
+  
+  .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    border: 1px solid #ddd;
+    list-style: none;
+    padding: 0.5rem 0;
+    z-index: 1000;
+  }
+  
+  .submenu li {
+    padding: 0.5rem 1rem;
+  }
+  
+  .submenu li a {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  .submenu li a:hover {
+    color: #ff9800;
+  }
+  
+  .menu-links li:hover .submenu {
+    display: block;
+  }
+  
+  @media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .menu-links {
+      flex-direction: column;
+      gap: 0.5rem;
+      width: 100%;
+    }
+  
+    .submenu {
+      position: static;
+      border: none;
+      background-color: #f9f9f9;
+    }
+  
+    .submenu li {
+      padding: 0.5rem;
+    }
+  }
+  

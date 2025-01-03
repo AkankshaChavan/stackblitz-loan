@@ -1,0 +1,57 @@
+.container {
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    height: auto;
+  }
+  
+  .divider {
+    width: 50px;
+    background-color: aqua;
+    height: 5px;
+  }
+  
+  .container h2 {
+    margin-bottom: 20px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul li {
+    margin: 10px 0;
+    font-size: 16px;
+  }
+  
+  .loan-selection {
+    margin-top: 20px;
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .loan-selection h3 {
+    margin-bottom: 20px;
+  }
+  
+  .action-button {
+    margin-top: 20px;
+    background-color: #0077c8;
+    color: white;
+  }
+  
+  @media only screen and (min-width: 500px) {
+    .container {
+      background-color: #003366;
+      color: white;
+      padding: 20px;
+      border-radius: 5px;
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+  
