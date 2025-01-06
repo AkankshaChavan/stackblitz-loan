@@ -1,0 +1,154 @@
+.custom-page-container {
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.custom-page-container h2 {
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    width: -webkit-fill-available;
+}
+
+ul li {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.custom-loan-options {
+    color: black;
+    border-radius: 5px;
+}
+
+.custom-loan-options h3 {
+    margin-bottom: 20px;
+}
+
+.custom-start-btn {
+    margin-top: 20px;
+    background-color: #0077c8;
+    color: white;
+}
+
+small {
+    display: none;
+}
+
+@media only screen and (min-width: 398px) {
+    .custom-page-container {
+        background-color: #003366;
+        color: white;
+        padding: 20px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+.custom-form-card {
+    max-width: 400px; /* Card size for desktop */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.custom-form-title {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.custom-p-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    width: 60%;
+}
+
+.custom-form-label {
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+.custom-p-inputgroup {
+    display: flex;
+    align-items: center;
+}
+
+.custom-p-inputgroup-addon {
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-right: none;
+}
+
+input, .p-calendar {
+    width: 100%;
+    padding: 10px;
+}
+
+.custom-p-error {
+    color: red;
+    font-size: 0.9rem;
+}
+
+.custom-note-text {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.custom-submit-btn {
+    width: 45%;
+    padding: 10px;
+}
+
+.custom-timer-text {
+    font-size: 1rem;
+    color: #ff5733;
+    margin-top: 10px;
+}
+
+.custom-success-text {
+    color: green;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .custom-form-card {
+        padding: 10px;
+    }
+
+    .custom-form-title {
+        font-size: 1.25rem;
+    }
+
+    .custom-p-field {
+        width: 60%;
+        margin-bottom: 10px;
+    }
+
+    .custom-form-label {
+        font-size: 0.9rem;
+    }
+
+    .custom-p-inputgroup-addon {
+        padding: 8px;
+    }
+
+    input, .p-calendar {
+        padding: 8px;
+    }
+
+    .custom-submit-btn {
+        padding: 12px;
+        width: 45%;
+    }
+
+    .custom-note-text {
+        font-size: 0.8rem;
+    }
+}

@@ -1,1 +1,101 @@
-<p>apply-personal-loan works!</p>
+<p-toast></p-toast>
+<div class="custom-page-container">
+  <ul>
+    <h3>Discover</h3>
+    <h3 class="custom-form-title">the best Products curated for you</h3>
+    <p>in just few steps</p>
+  </ul>
+  <div class="custom-loan-options">
+    <p-card class="custom-form-card">
+      <h2 class="custom-form-title">Welcome! Start your personal loan process</h2>
+
+      <form [formGroup]="secondForm" (ngSubmit)="onSubmit()">
+        <div class="custom-p-field">
+          <label for="mobile" class="custom-form-label">Enter Your Registered Mobile Number</label>
+          <div class="custom-p-inputgroup">
+            <span class="custom-p-inputgroup-addon">+91</span>
+            <input
+              id="mobile"
+              type="text"
+              pInputText
+              formControlName="mobile"
+              placeholder="Enter your mobile number"
+            />
+          </div>
+          <small class="custom-p-error">
+            Mobile number is required and must be 10 digits.
+          </small>
+        </div>
+        <div class="custom-p-field">
+          <div>
+            <p class="custom-timer-text">Resend OTP in seconds</p>
+          </div>
+        </div>
+
+        <div class="custom-p-field">
+          <label for="otp" class="custom-form-label">Enter OTP</label>
+          <input
+            id="otp"
+            type="text"
+            formControlName="otp"
+            placeholder="Enter OTP"
+            maxlength="4"
+          />
+          <small class="custom-success-text">Otp Verified Successfully</small>
+          <small class="custom-p-error">Invalid OTP. Please try again.</small>
+        </div>
+
+        <p class="custom-note-text">
+          Note: Once the mobile number is entered, OTP will be sent to the registered mobile number for verification.
+        </p>
+
+        <div class="custom-p-field">
+          <label for="dob" class="custom-form-label">Enter Your Date of Birth (as per PAN/Aadhar)</label>
+          <p-calendar
+            id="dob"
+            formControlName="dob"
+            placeholder="dd/mm/yyyy"
+            dateFormat="dd/mm/yy"
+          ></p-calendar>
+          <small class="custom-p-error">
+            Date of Birth is required.
+          </small>
+        </div>
+
+        <div class="custom-p-field">
+          <label for="pan" class="custom-form-label">Enter your PAN Number</label>
+          <input
+            id="pan"
+            type="text"
+            pInputText
+            formControlName="pan"
+            placeholder="Enter PAN number"
+          />
+          <small class="custom-p-error">
+            PAN number is required and must be valid.
+          </small>
+        </div>
+
+        <div class="custom-p-field-checkbox">
+          <p-checkbox
+            formControlName="terms"
+            binary="true"
+          ></p-checkbox>
+          <label for="terms" class="custom-form-terms">
+            I hereby accept that my Personal Data may be held and processed by the bank for availing this loan and relevant services. I Agree to T&C.
+          </label>
+          <small class="custom-p-error">
+            You must agree to the terms and conditions.
+          </small>
+        </div>
+
+        <button
+          type="submit"
+          pButton
+          label="Proceed"
+          class="custom-submit-btn"
+        ></button>
+      </form>
+    </p-card>
+  </div>
+</div>
